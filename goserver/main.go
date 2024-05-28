@@ -12,7 +12,7 @@ func main() {
 
 	m.HandleFunc("/", handlePage)
 
-	const addr = ":8090"
+	const addr = ":8080"
 	srv := http.Server{
 		Handler:      m,
 		Addr:         addr,
