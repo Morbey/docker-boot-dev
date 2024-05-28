@@ -12,7 +12,7 @@ func main() {
 
 	m.HandleFunc("/", handlePage)
 
-	const addr = ":8080"
+	const addr = ":8090"
 	srv := http.Server{
 		Handler:      m,
 		Addr:         addr,
@@ -33,7 +33,7 @@ func handlePage(w http.ResponseWriter, r *http.Request) {
 	const page = `<html>
 <head></head>
 <body>
-	<p> Hi Docker, I pushed a new version! </p>
+	<p> Hello from Docker! I'm a Go server. </p>
 </body>
 </html>
 `
