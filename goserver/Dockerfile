@@ -1,7 +1,5 @@
 FROM debian:stable-slim
 
-COPY docker-boot-dev /bin/goserver
+COPY goserver /bin/goserver
 
-ENV PORT 8080
-
-CMD [ "/bin/goserver" ]
+CMD ["/bin/goserver"]
